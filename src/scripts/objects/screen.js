@@ -7,7 +7,12 @@ const screen = {
                                                 <h1>${user.name ?? 'Não possui nome cadastrado 😥'}</h1>
                                                 <p>${user.bio ?? 'Não possui bio cadastrado 😥'}</p>
                                             </div>
-                                        </div>`
+                                        </div>
+                                        
+                                       
+                                        <div class="socialData">
+                                        <div>👥 Seguidores: ${user.followers}</div>
+                                        <div>👥 Seguindo ${user.following}</div> </div>`
 
         let repositoriesItens = ''
         user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target= "_blank">${repo.name}</a></li>`
@@ -19,6 +24,7 @@ const screen = {
                                             </div>`
         }
     },
+    
     renderNotFound(){
         this.userProfile.innerHTML = "<h3>Usuário não encontrado</h3>"
     }

@@ -152,6 +152,13 @@ main {
   display: none;
 }
 
+.socialData{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
@@ -169,11 +176,15 @@ main {
   }
 }
 
+
 @media (max-width: 768px) {
   .container header #input-search,
   .container header #btn-search
   {
     width: 100%;
+  }
+  .socialData{
+    display: block;
   }
 }
 
