@@ -154,6 +154,19 @@ main {
   display: none;
 }
 
+.container .profile-data .repoProperties{
+  display: flex;
+  
+}
+
+.repoProperties div {
+  padding: 5px;
+  margin: 2px 2px;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+}
+
 /* Social */
 
 .socialData{
