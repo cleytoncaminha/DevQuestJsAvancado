@@ -12,16 +12,23 @@ const screen = {
                                        
                                         <div class="socialData">
                                         <div>👥 Seguidores: ${user.followers}</div>
-                                        <div>👥 Seguindo ${user.following}</div> </div>`
+                                        <div>👥 Seguindo: ${user.following}</div> </div>`
 
         let repositoriesItens = ''
-        user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target= "_blank">${repo.name}</a></li>`
-        )
+        user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target= "_blank">${repo.name}</a></li>`)
         if (user.repositories.length > 0) {
             this.userProfile.innerHTML += `<div class= "repositories section">
                                                 <h2>Repositorios</h2>
                                                 <ul>${repositoriesItens}</ul>
                                             </div>`
+        }
+        let eventItens = ''
+        user.events.forEach(event => eventItens += `<div><h2>${event.repo.name}:</h2>atividade do tipo: ${event.type}</div>`)
+        if (user.events.length > 0) {
+            this.userProfile.innerHTML += `<div class= "events">
+                                                <h1>Atividades</h1> 
+                                                ${eventItens}
+                                             </div>`
         }
     },
     

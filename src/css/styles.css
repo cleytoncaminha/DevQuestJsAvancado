@@ -110,7 +110,7 @@ main {
 }
 
 .container .profile-data .info h1{
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -126,6 +126,8 @@ main {
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
   text-align: center;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 .container .profile-data .repositories ul{
@@ -152,11 +154,29 @@ main {
   display: none;
 }
 
+/* Social */
+
 .socialData{
   display: flex;
   margin-top: 2rem;
   justify-content: space-around;
   width: 100%;
+}
+
+/* Events */
+
+.events{
+  width: 100%;
+}
+
+.events h1 {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.events div {
+  padding: 10px;
 }
 
 @media (max-width: 1280px) {
