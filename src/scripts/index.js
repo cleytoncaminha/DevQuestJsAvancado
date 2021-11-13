@@ -48,5 +48,5 @@ async function getUserData(userName) {
     user.setEvents(userEvents)
 
 
-    screen.renderUser(user)
+    screen.renderScreen(user)
 }
